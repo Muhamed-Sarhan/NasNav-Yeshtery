@@ -1,0 +1,47 @@
+.main-gender {
+  height: 48px;
+  width: 100%;
+  background: #000000 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0.87px 2px #00000040;
+  opacity: 1;
+  display: flex;
+}
+.gender-container {
+  width: 81%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  p {
+    text-align: center;
+    letter-spacing: 0px;
+    color: #ffffff;
+    opacity: 1;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    margin-right: 115.28px;
+  }
+}
+.categoryBarItemOffers {
+  color: #f11133 !important;
+  font-weight: bolder;
+  margin-right: 0 !important;
+}
+
+@media screen and (min-width: 750px) and (max-width: 1085px) {
+  .gender-container {
+    width: 90%;
+    p {
+      font-size: 11px;
+      margin-right: 90px;
+    }
+  }
+}
+
+@media screen and (min-width: 750px) and (max-width: 987px) {
+  .gender-container {
+    p {
+      font-size: 10px;
+      margin-right: 80px;
+    }
+  }
+}

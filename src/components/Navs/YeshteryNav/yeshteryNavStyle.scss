@@ -1,0 +1,92 @@
+.mainSection {
+  height: 48px;
+  width: 100%;
+  background-color: #fff100;
+  display: flex;
+}
+.mainSectionContainer {
+  width: 81%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+.yeshteryMenu {
+  display: flex;
+  align-items: center;
+}
+.menuIcon {
+  margin-right: 32px;
+}
+.shoppingCaption {
+  display: flex;
+  justify-content: space-between;
+  width: 440px;
+  margin-left: 105.9px;
+  p {
+    font-size: 14px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+  }
+}
+.mainOptions {
+  display: flex;
+  align-items: center;
+  margin-left: 51.4px;
+  font-family: 'Montserrat', sans-serif;
+  div {
+    display: flex;
+    align-items: center;
+    p {
+      margin-left: 10px;
+      margin-right: 51.4px;
+      font-size: 14px;
+      font-weight: 900;
+    }
+  }
+  .lastDiv {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (min-width: 750px) and (max-width: 1085px) {
+  .mainSectionContainer {
+    width: 90%;
+  }
+  .shoppingCaption {
+    margin-left: 100px;
+    p {
+      font-size: 10px;
+    }
+  }
+  .mainOptions {
+    margin-left: 70px;
+    div {
+      p {
+        font-size: 10px;
+        margin-left: 10px;
+        margin-right: 25px;
+        font-weight: 900;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 750px) and (max-width: 987px) {
+  .shoppingCaption {
+    margin-left: 70px;
+    p {
+      font-size: 10px;
+    }
+  }
+  .mainOptions {
+    margin-left: 40px;
+    div {
+      p {
+        font-size: 10px;
+        margin-left: 5px;
+        margin-right: 15px;
+        font-weight: 900;
+      }
+    }
+  }
+}
