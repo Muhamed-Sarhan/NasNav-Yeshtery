@@ -1,12 +1,12 @@
 import React from 'react';
-import './addidasNavStyle.scss';
+import './secondNavStyle.scss';
 import Search from '../../../Icons/Search';
 import Adidas from '../../../Icons/Adidas';
 import Cart from '../../../Icons/Cart';
 import Wishlist from '../../../Icons/Wishlist';
 import User from '../../../Icons/User';
 
-const AddidasNav = () => {
+const SecondNav = () => {
   return (
     <div className='addidas-main-section'>
       <div className='addidas-container'>
@@ -33,7 +33,7 @@ const AddidasNav = () => {
           </div>
           <div>
             <User />
-            <p>Login</p>
+            <p  className='userP'>Login</p>
           </div>
         </div>
       </div>
@@ -41,4 +41,4 @@ const AddidasNav = () => {
   );
 };
 
-export default AddidasNav;
+export default SecondNav;

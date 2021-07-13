@@ -1,7 +1,7 @@
 import React from 'react';
-import './genderNavStyle.scss';
+import './thirdNavStyle.scss';
 
-const GenderNav = () => {
+const ThirdNav = () => {
   return (
     <div className='main-gender'>
       <div className='gender-container'>
@@ -17,4 +17,4 @@ const GenderNav = () => {
   );
 };
 
-export default GenderNav;
+export default ThirdNav;

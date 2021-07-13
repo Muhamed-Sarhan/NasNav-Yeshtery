@@ -1,5 +1,6 @@
 import React from 'react';
-import './yeshteryNavStyle.scss';
+import { Link } from 'react-router-dom';
+import './firstNavStyle.scss';
 import Yeshtery from '../../../Icons/Yeshtery';
 import Menu from '../../../Icons/Menu';
 import LeftArrow from '../../../Icons/ArrowLeft';
@@ -8,7 +9,7 @@ import Phone from '../../../Icons/Phone';
 import Track from '../../../Icons/Track';
 import Location from '../../../Icons/Location';
 
-const YeshteryNav = () => {
+const FirstNav = () => {
   return (
     <div className='mainSection'>
       <div className='mainSectionContainer'>
@@ -25,7 +26,7 @@ const YeshteryNav = () => {
           <div className='leftI'>
             <LeftArrow />
           </div>
-          <p>Valentine’s Day Offers! Buy Two Get One Free Shop Now</p>
+          <p>Valentine’s Day Offers! Buy Two Get One Free <Link>Shop Now</Link></p>
           <div className='rightI'>
             <RightArrow />
           </div>
@@ -52,4 +53,4 @@ const YeshteryNav = () => {
   );
 };
 
-export default YeshteryNav;
+export default FirstNav;

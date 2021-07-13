@@ -1,16 +1,19 @@
 .addidas-main-section {
   height: 84px;
-  width: 100%;
   display: flex;
   background: #ffffff 0% 0% no-repeat padding-box;
   box-shadow: 0px 0.92px 3px #00000080;
   opacity: 1;
 }
 .addidas-container {
-  width: 81%;
-  margin: auto;
+  margin-right: auto;
+    margin-left:  auto; 
+    max-width: 1270px;
+    padding-left: 20px;
+    padding-right: 20px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .search-section {
   width: 350px;
@@ -59,6 +62,9 @@
     }
   }
 }
+.userP{
+  margin-right: 0px;
+}
 .cartI {
   position: relative;
 }
@@ -75,15 +81,13 @@
   text-align: center;
 }
 
-@media screen and (min-width: 750px) and (max-width: 1085px) {
-  .addidas-container {
-    width: 90%;
-  }
+@media screen and (min-width: 1120px) and (max-width: 1250px) {
+  
   .addidas-main-options {
-    margin-left: 180px;
+    margin-left: 200px;
     div {
       p {
-        margin-left: 5px;
+        margin-left: 6px;
         margin-right: 22px;
         font-size: 10px;
       }
@@ -91,18 +95,42 @@
   }
 }
 
-@media screen and (min-width: 750px) and (max-width: 987px) {
-  .addidas-main-options {
-    margin-left: 70px;
-    div {
-      p {
-        margin-left: 5px;
-        margin-right: 10px;
-        font-size: 10px;
-      }
+
+@media screen and (min-width: 900px) and (max-width: 1120px) {
+  .addidas-container {
+    max-width: 900px;
+    
+}
+.addidas-main-options {
+  margin-left: 150.6px;
+  div {
+    p {
+      margin-left: 3px;
+      margin-right: 10px;
+      font-size: 10px;
     }
   }
-  .addidas-logo {
-    margin-left: 70px;
+}
+.addidas-logo {
+  margin-left: 80px;
+}
+}
+
+
+@media screen and (min-width: 650px) and (max-width: 900px) {
+  
+.addidas-main-options {
+  margin-left: 100.6px;
+  div {
+    p {
+      margin-left: 2px;
+      margin-right: 6px;
+      font-size: 10px;
+    }
   }
 }
+.addidas-logo {
+  margin-left: 80px;
+}
+}
+
