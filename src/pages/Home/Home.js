@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './homeStyle.scss';
 import data from "../../services/data";
 import Slider from '../../components/Slider/slider'
+import FirstProductSection from '../../components/FirstProductsSection/firstProductSection';
 
 
 const {  } = data;
@@ -12,9 +13,7 @@ const {  } = data;
 class Home extends Component {
     constructor() {
         super();
-        this.state = {
-          
-        };
+        this.myRef = React.createRef(null);
       }
 
       
@@ -28,6 +27,7 @@ class Home extends Component {
     return (
         <div className="Home">
           <Slider/>
+          <FirstProductSection myRef={this.myRef}/>
         </div>
     );
   }
