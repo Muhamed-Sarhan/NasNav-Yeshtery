@@ -6,7 +6,7 @@ import Search from "../../../Icons/Search";
 import CartMobile from "../../../Icons/CartMobile";
 import Wishlist from "../../../Icons/Wishlist";
 
-const secondNavMobile = () => {
+const SecondNavMobile = () => {
   return (
     <div className="menu-mobile">
       <div className="menu-brand">
@@ -32,4 +32,4 @@ const secondNavMobile = () => {
   );
 };
 
-export default secondNavMobile;
+export default SecondNavMobile;
