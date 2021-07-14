@@ -6,50 +6,55 @@
 }
 .mainSectionContainer {
   margin-right: auto;
-    margin-left:  auto; 
-    max-width: 1270px;
-    padding-left: 20px;
-    padding-right: 20px;
+  margin-left: auto;
+  width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .yeshteryMenu {
   display: flex;
   align-items: center;
+  width: 172px;
+  justify-content: space-between;
 }
-.menuIcon {
-  margin-right: 32px;
+.yeshtry-mobile {
+  display: none;
+  max-width: 93px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .shoppingCaption {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 440px;
-  margin-left: 105.9px;
   p {
     font-size: 14px;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    a{
+    font-family: "Montserrat", sans-serif;
+    a {
       font-size: 14px;
       text-align: center;
-text-decoration: underline;
-letter-spacing: 0px;
-color: #000000;
-font-weight: 900;
+      text-decoration: underline;
+      letter-spacing: 0px;
+      color: #000000;
+      font-weight: 900;
     }
   }
 }
 .mainOptions {
+  width: 380px;
   display: flex;
   align-items: center;
-  margin-left: 51.4px;
-  font-family: 'Montserrat', sans-serif;
+  justify-content: space-between;
+  font-family: "Montserrat", sans-serif;
   div {
     display: flex;
     align-items: center;
     p {
       margin-left: 10px;
-      margin-right: 51.4px;
       font-size: 14px;
       font-weight: 900;
     }
@@ -59,54 +64,69 @@ font-weight: 900;
   }
 }
 
-@media screen and (min-width: 1120px) and (max-width: 1250px) {
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
   .mainSectionContainer {
     max-width: 1000px;
-}
+  }
+
   .shoppingCaption {
-    margin-left: 65.5px;
+    width: 390px;
+    justify-content: space-evenly;
     p {
       font-size: 10px;
+      a {
+        font-size: 10px;
+        font-weight: 900;
+      }
     }
   }
   .mainOptions {
-      margin-left: 35px;
+    justify-content: space-evenly;
     div {
-        p {
-          font-size: 12px;
-          width: 78px;
-          margin-left: 7px;
-          margin-right: 20px;
-          font-weight: 900;
-        }
-}}
+      p {
+        font-size: 12px;
+        margin-left: 7px;
+        font-weight: 900;
+      }
+    }
+  }
 }
 
-@media screen and (min-width: 900px) and (max-width: 1120px) {
+@media screen and (min-width: 800px) and (max-width: 1000px) {
   .mainSectionContainer {
-    max-width: 900px;
-}
+    max-width: 800px;
+  }
+
   .shoppingCaption {
-    margin-left: 28.5px;
+    width: 340px;
+    justify-content: space-evenly;
     p {
-      font-size: 10px;
+      font-size: 8px;
+      a {
+        font-size: 8px;
+        font-weight: 900;
+      }
     }
   }
   .mainOptions {
-    margin-left: 20px;
+    justify-content: space-evenly;
     div {
-        p {
-          font-size: 12px;
-          width: 78px;
-          margin-left: 5px;
-          margin-right: 7px;
-          font-weight: 900;
-        }
-  
-}}
-.menuIcon {
-  margin-right: 25px;
-}
+      p {
+        font-size: 10px;
+        margin-left: 4px;
+        font-weight: 900;
+      }
+    }
+  }
 }
 
-
+@media screen and (max-width: 800px) {
+  .mainSectionContainer {
+    display: none;
+  }
+  .yeshtry-mobile {
+    display: block;
+    display: flex;
+    align-items: center;
+  }
+}

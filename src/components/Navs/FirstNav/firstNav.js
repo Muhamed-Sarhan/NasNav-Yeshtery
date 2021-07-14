@@ -1,38 +1,41 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import './firstNavStyle.scss';
-import Yeshtery from '../../../Icons/Yeshtery';
-import Menu from '../../../Icons/Menu';
-import LeftArrow from '../../../Icons/ArrowLeft';
-import RightArrow from '../../../Icons/ArrowRight';
-import Phone from '../../../Icons/Phone';
-import Track from '../../../Icons/Track';
-import Location from '../../../Icons/Location';
+import React from "react";
+import { Link } from "react-router-dom";
+import "./firstNavStyle.scss";
+import Yeshtery from "../../../Icons/Yeshtery";
+import YeshteryMobile from "../../../Icons/YeshteryMobile";
+import Menu from "../../../Icons/Menu";
+import LeftArrow from "../../../Icons/ArrowLeft";
+import RightArrow from "../../../Icons/ArrowRight";
+import Phone from "../../../Icons/Phone";
+import Track from "../../../Icons/Track";
+import Location from "../../../Icons/Location";
 
 const FirstNav = () => {
   return (
-    <div className='mainSection'>
-      <div className='mainSectionContainer'>
-        <div className='yeshteryMenu'>
-          <div className='menuIcon'>
+    <div className="mainSection">
+      <div className="mainSectionContainer">
+        <div className="yeshteryMenu">
+          <div className="menuIcon">
             <Menu />
           </div>
-          <div className='yeshteryIcon'>
+          <div className="yeshteryIcon">
             <Yeshtery />
           </div>
         </div>
 
-        <div className='shoppingCaption'>
-          <div className='leftI'>
+        <div className="shoppingCaption">
+          <div className="leftI">
             <LeftArrow />
           </div>
-          <p>Valentine’s Day Offers! Buy Two Get One Free <Link>Shop Now</Link></p>
-          <div className='rightI'>
+          <p>
+            Valentine’s Day Offers! Buy Two Get One Free <Link>Shop Now</Link>
+          </p>
+          <div className="rightI">
             <RightArrow />
           </div>
         </div>
 
-        <div className='mainOptions'>
+        <div className="mainOptions">
           <div>
             <Phone />
             <p>Contact Us</p>
@@ -45,9 +48,14 @@ const FirstNav = () => {
 
           <div>
             <Location />
-            <p className='lastDiv'>Find a Store</p>
+            <p className="lastDiv">Find a Store</p>
           </div>
         </div>
+      </div>
+      <div className="yeshtry-mobile">
+        <Link>
+          <YeshteryMobile />
+        </Link>
       </div>
     </div>
   );

@@ -24,7 +24,7 @@ const SecondNav = () => {
         <div className='addidas-main-options'>
           <div className='cartI'>
             <Cart />
-            <div className='counter'>0</div>
+            <div className='counter'><strong>0</strong></div>
             <p>Cart</p>
           </div>
           <div>

@@ -15,7 +15,7 @@ const data = {
     {
       id: 1,
       title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      productImg: "img/1000.png",
+      productImg: "img/11.jpeg",
       brandImg: "img/addidas.svg",
       imgIcon: "img/360.svg",
       rate: 4,
@@ -29,7 +29,7 @@ const data = {
     {
       id: 2,
       title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      productImg: "img/2000.png",
+      productImg: "img/21.jpeg",
       brandImg: "img/addidas.svg",
       imgIcon: "img/360.svg",
       rate: 4,

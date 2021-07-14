@@ -6,18 +6,21 @@
     margin-bottom: 32px;
     
 }
-.product-cart  {
-    margin-right: 32px;
-    margin-bottom: 32px;
-  }
-  
-  .products-scroll{
-        display: flex;
-        overflow-x: auto;
+.product-cart{
+        margin-bottom: 32px;
+        margin-right: 32px;
+}
+.product-cart:last-child{
+  margin-right: 0px !important;
+}
+
+  .products-scroll{  
+    
+    display: flex;
+          overflow-x: auto;
         -webkit-overflow-scrolling: touch;
         scrollbar-width: thin;
         scroll-behavior: smooth;
-        margin-top: 32px;
       }
       .products-scroll::-webkit-scrollbar {
         height: 5px;

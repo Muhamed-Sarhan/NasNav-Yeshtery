@@ -1,17 +1,18 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './thirdNavStyle.scss';
 
 const ThirdNav = () => {
   return (
     <div className='main-gender'>
       <div className='gender-container'>
-        <p>Men</p>
-        <p>Women</p>
-        <p>Unisex</p>
-        <p>Kids</p>
-        <p>Best Seller</p>
-        <p>New Arrival</p>
-        <p className='categoryBarItemOffers'>Offers</p>
+        <Link className='categoryMan'>Men</Link>
+        <Link>Women</Link>
+        <Link>Unisex</Link>
+        <Link>Kids</Link>
+        <Link>Best Seller</Link>
+        <Link>New Arrival</Link>
+        <Link className='categoryBarItemOffers'>Offers</Link>
       </div>
     </div>
   );
