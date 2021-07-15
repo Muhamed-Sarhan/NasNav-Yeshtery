@@ -1,70 +1,70 @@
-.products-container{
+.s-products-container{
     max-width: 1168px;
     margin-left: auto;
     margin-right: auto;
     transform: translate3d(0, 0, 0);
-    margin-bottom: 32px;
+    margin-bottom: 57.78px;
     
 }
-.product-cart{
+.s-product-cart{
         margin-bottom: 32px;
         margin-right: 32px;
 }
-.product-cart:last-child{
+.s-product-cart:last-child{
   margin-right: 0px !important;
 }
 
-  .products-scroll{  
+  .s-products-scroll{  
     
-    display: flex;
-          overflow-x: auto;
+      display: flex;
+        overflow-x: auto;
         -webkit-overflow-scrolling: touch;
         scrollbar-width: thin;
         scroll-behavior: smooth;
       }
-      .products-scroll::-webkit-scrollbar {
+      .s-products-scroll::-webkit-scrollbar {
         height: 5px;
       }
-      .products-scroll::-webkit-scrollbar-track {
+      .s-products-scroll::-webkit-scrollbar-track {
         border: 3px solid #D9D9D9;
         opacity: 1;
       }
-      .products-scroll::-webkit-scrollbar-thumb {
+      .s-products-scroll::-webkit-scrollbar-thumb {
         border: 5px solid #542E90;
         opacity: 1;
       }
-      .prev {
+      .s-prev {
         border: 0;
         min-width: 55px;
         position: absolute;
         top: 0;
-        bottom: 7.5%;
+        bottom: 7%;
         left: 0;
         background: #1d1d1b 0% 0% no-repeat padding-box;
-        border-radius: 20px 0px 0px 20px;
+        border-radius: 32px 0px 0px 32px;
         opacity: 0.1;
         cursor: pointer;
         z-index: 100;
       }
       
-      .prev:hover {
+      .s-prev:hover {
         opacity: 0.3;
       }
       
-      .next {
+      .s-next {
         border: 0;
         min-width: 55px;
         position: absolute;
         top: 0;
-        bottom: 7.5%;
+        bottom: 7%;
         right: 0;
         background: #1d1d1b 0% 0% no-repeat padding-box;
-        border-radius: 20px 0px 0px 20px;
+        border-radius: 32px 0px 0px 32px;
         opacity: 0.1;
         cursor: pointer;
         transform: matrix(-1, 0, 0, -1, 0, 0);
       }
-      .next:hover {
+      .s-next:hover {
         opacity: 0.3;
       }
   

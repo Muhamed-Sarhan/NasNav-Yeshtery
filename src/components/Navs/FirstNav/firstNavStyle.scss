@@ -20,12 +20,7 @@
   width: 172px;
   justify-content: space-between;
 }
-.yeshtry-mobile {
-  display: none;
-  max-width: 93px;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 .shoppingCaption {
   display: flex;
   justify-content: space-around;
@@ -120,13 +115,4 @@
   }
 }
 
-@media screen and (max-width: 800px) {
-  .mainSectionContainer {
-    display: none;
-  }
-  .yeshtry-mobile {
-    display: block;
-    display: flex;
-    align-items: center;
-  }
-}
+

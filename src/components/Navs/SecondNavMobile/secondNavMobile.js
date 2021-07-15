@@ -9,6 +9,7 @@ import Wishlist from "../../../Icons/Wishlist";
 const SecondNavMobile = () => {
   return (
     <div className="menu-mobile">
+      <div className='menu-mobile-container'>
       <div className="menu-brand">
         <div>
           <MenuMobile />
@@ -27,6 +28,7 @@ const SecondNavMobile = () => {
         <div>
           <Wishlist />
         </div>
+      </div>
       </div>
     </div>
   );

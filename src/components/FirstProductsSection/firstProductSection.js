@@ -1,27 +1,50 @@
 import React from "react";
-import Scroller from "../Scroller/scroller";
-import ViewAllBtn from "../ViewAllBtn/viewAllBtn";
-import SelectComp from "../SelectComp/selectComp";
+import Scroller from "../FirstScroller/scroller";
+import DropDown from "../../Icons/DropDown";
 import "./firstProductSectionStyle.scss";
+import { Link } from 'react-router-dom';
 
-const FirstProductSection = ({ myRef, filteredData }) => {
+const FirstProductSection = ({ filteredData , gender , filterFirstSection }) => {
   return (
     <div className="f-section">
-      <div className="header">
-        <div className="title">
+      <div className="f-header">
+        <div className="f-title">
           <h3>Best Sellers</h3>
-          <h5>Check out our best sellers</h5>
+          <h5>Check out our best sellers.</h5>
         </div>
-        <div className="btn-select">
+        <div className="f-btn-select">
           <div>
-            <SelectComp />
+
+          <div className="f-select">
+          <select value={gender} onChange={filterFirstSection}>
+            <option value='all'>All</option>
+            <option value='men'>Men</option>
+            <option value='women'>Women</option>
+          </select>
+          <div className="f-drop-down">
+            <DropDown />
           </div>
+        </div>
+
+          </div>
+
           <div>
-            <ViewAllBtn />
+
+          <Link className='view-all-btn'>
+          <strong>View All</strong>
+          </Link>
+
           </div>
+
         </div>
       </div>
-      <Scroller myRef={myRef} filteredData={filteredData} />
+      <Scroller filteredData={filteredData} />
+
+          <div className='btn-mob-container'>
+            <Link className='view-all-btn-mobile'>
+          <strong>View All</strong>
+          </Link>
+          </div>
     </div>
   );
 };

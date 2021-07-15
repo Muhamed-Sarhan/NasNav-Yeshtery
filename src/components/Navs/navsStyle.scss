@@ -1,11 +1,33 @@
+.f-nav-mobile{
+  display: none;
+}
 .s-nav-mobile {
   display: none;
 }
+
+.t-nav-mobile{
+  display: none;
+}
+
 @media screen and (max-width: 800px) {
+  .f-nav-web{
+    display: none;
+  }
+  .f-nav-mobile{
+    display: block;
+  }
+
   .s-nav-web {
     display: none;
   }
   .s-nav-mobile {
+    display: block;
+  }
+  
+  .t-nav-web{
+    display: none;
+  }
+  .t-nav-mobile{
     display: block;
   }
 }

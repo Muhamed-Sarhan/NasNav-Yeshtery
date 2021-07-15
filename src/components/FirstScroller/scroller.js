@@ -1,12 +1,15 @@
-import React from 'react'
+import React, { createRef } from 'react'
 import FirstProductCart from '../FirstProductCart/firstProductCart'
 import './scrollerStyle.scss'
 import Prev from '../../Icons/Prev'
 
-const Scroller = ({myRef , filteredData}) => {
+const ref = createRef(null);
+
+const Scroller = ({filteredData}) => {
+
 
     const scroll = (scrollOffset) => {
-        myRef.current.scrollLeft += scrollOffset;
+      ref.current.scrollLeft += scrollOffset;
       };
 
 
@@ -14,17 +17,17 @@ const Scroller = ({myRef , filteredData}) => {
     return (
         <div className='products-container'>
         
-        <button onClick={() => scroll(-298)} className='prev'>
+        <button onClick={() => scroll(-300)} className='prev'>
             <Prev/>
           </button>
-          <div className='products-scroll' ref={myRef}>
+          <div className='products-scroll' ref={ref}>
             {filteredData.map((product)=>(
               <div className='product-cart'>
               <FirstProductCart product={product} key={product.id}/>
               </div>
             ))}
             </div>
-            <button onClick={() => scroll(298)} className='next'>
+            <button onClick={() => scroll(300)} className='next'>
             <Prev/>
           </button>
             

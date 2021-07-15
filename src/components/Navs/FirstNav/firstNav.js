@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./firstNavStyle.scss";
 import Yeshtery from "../../../Icons/Yeshtery";
-import YeshteryMobile from "../../../Icons/YeshteryMobile";
 import Menu from "../../../Icons/Menu";
 import LeftArrow from "../../../Icons/ArrowLeft";
 import RightArrow from "../../../Icons/ArrowRight";
@@ -51,11 +50,6 @@ const FirstNav = () => {
             <p className="lastDiv">Find a Store</p>
           </div>
         </div>
-      </div>
-      <div className="yeshtry-mobile">
-        <Link>
-          <YeshteryMobile />
-        </Link>
       </div>
     </div>
   );

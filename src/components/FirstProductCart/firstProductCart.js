@@ -1,24 +1,23 @@
 import React from 'react'
 import './firstProductCartStyle.scss'
-import adiddas from '../../images/addid.svg'
 
 const FirstProductCart = ({product}) => {
     return (
         <div className='f-cart'>
             <div className='f-cart-img'>
             <img src={product.productImg}/>
-             <div className='reverse-cart-img'>
+             <div className='f-reverse-cart-img'>
              <img src={product.imgIcon}/>
              </div>
             </div>
-            <div className='cart-content'>
-             <div className='cart-header'>{product.title}</div>
-             <div className='cart-sale-brand'>
-              <div className='cart-cost'>
-                <div className='current-cost'>{product.currentPrice} {product.currency}</div>
-                <div className='old-and-sale'>
-                 <div className='old-cost'>{product.oldPrice} {product.currency}</div>
-                 <strong className='sale'>
+            <div className='f-cart-content'>
+             <div className='f-cart-header'>{product.title}</div>
+             <div className='f-cart-sale-brand'>
+              <div className='f-cart-cost'>
+                <div className='f-current-cost'>{product.currentPrice} {product.currency}</div>
+                <div className='f-old-and-sale'>
+                 <div className='f-old-cost'>{product.oldPrice} {product.currency}</div>
+                 <strong className='f-sale'>
                  {Math.floor(
                     100 - (product.currentPrice / product.oldPrice) * 100
                   )}{" "}
@@ -26,13 +25,13 @@ const FirstProductCart = ({product}) => {
                  </strong>
                 </div>
               </div>
-              <div className='cart-brand'><img src={product.brandImg}/></div>
+              <div className='f-cart-brand'><img src={product.brandImg}/></div>
              </div>
-             <div className='cart-rate'>
-              <div className='cart-rate-stars'>*</div>
-              <div className='cart-rate-numbers'>{product.rate} of 5</div>
+             <div className='f-cart-rate'>
+              <div className='f-cart-rate-stars'>*</div>
+              <div className='f-cart-rate-numbers'>{product.rate} of 5</div>
              </div>
-             <div className='cart-pick-from'><p className='pick-from'>Pickup From :</p><strong className='cart-picked-place'>Genena Mall</strong></div>
+             <div className='f-cart-pick-from'><p className='f-pick-from'>Pickup From :</p><strong className='f-cart-picked-place'>Genena Mall</strong></div>
             </div>
 
         </div>
