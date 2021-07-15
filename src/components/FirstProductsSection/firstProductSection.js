@@ -1,10 +1,10 @@
 import React from "react";
 import Scroller from "../FirstScroller/scroller";
 import DropDown from "../../Icons/DropDown";
+import { Link } from "react-router-dom";
 import "./firstProductSectionStyle.scss";
-import { Link } from 'react-router-dom';
 
-const FirstProductSection = ({ filteredData , gender , filterFirstSection }) => {
+const FirstProductSection = ({ filteredData, gender, filterFirstSection }) => {
   return (
     <div className="f-section">
       <div className="f-header">
@@ -14,37 +14,32 @@ const FirstProductSection = ({ filteredData , gender , filterFirstSection }) => 
         </div>
         <div className="f-btn-select">
           <div>
-
-          <div className="f-select">
-          <select value={gender} onChange={filterFirstSection}>
-            <option value='all'>All</option>
-            <option value='men'>Men</option>
-            <option value='women'>Women</option>
-          </select>
-          <div className="f-drop-down">
-            <DropDown />
-          </div>
-        </div>
-
+            <div className="f-select">
+              <select value={gender} onChange={filterFirstSection}>
+                <option value="all">All</option>
+                <option value="men">Men</option>
+                <option value="women">Women</option>
+              </select>
+              <div className="f-drop-down">
+                <DropDown />
+              </div>
+            </div>
           </div>
 
           <div>
-
-          <Link className='view-all-btn'>
-          <strong>View All</strong>
-          </Link>
-
+            <Link className="f-view-all-btn">
+              <strong>View All</strong>
+            </Link>
           </div>
-
         </div>
       </div>
       <Scroller filteredData={filteredData} />
 
-          <div className='btn-mob-container'>
-            <Link className='view-all-btn-mobile'>
+      <div>
+        <Link className="f-view-all-btn-mobile">
           <strong>View All</strong>
-          </Link>
-          </div>
+        </Link>
+      </div>
     </div>
   );
 };

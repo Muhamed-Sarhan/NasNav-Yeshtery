@@ -3,8 +3,9 @@ import Scroller from "../ThirdScroller/scroller";
 import ViewAllBtn from "../ViewAllBtn/viewAllBtn";
 import DropDown from "../../Icons/DropDown";
 import "./thirdProductSectionStyle.scss";
+import { Link } from "react-router-dom";
 
-const ThirdProductSection = ({ filteredData , gender , filterThirdSection }) => {
+const ThirdProductSection = ({ filteredData, gender, filterThirdSection }) => {
   return (
     <div className="t-section">
       <div className="t-header">
@@ -14,23 +15,31 @@ const ThirdProductSection = ({ filteredData , gender , filterThirdSection }) => 
         </div>
         <div className="t-btn-select">
           <div>
-          <div className="select">
-          <select value={gender} onChange={filterThirdSection}>
-            <option value='all'>All</option>
-            <option value='men'>Men</option>
-            <option value='women'>Women</option>
-          </select>
-          <div className="drop-down">
-            <DropDown />
-          </div>
-        </div>
+            <div className="t-select">
+              <select value={gender} onChange={filterThirdSection}>
+                <option value="all">All</option>
+                <option value="men">Men</option>
+                <option value="women">Women</option>
+              </select>
+              <div className="t-drop-down">
+                <DropDown />
+              </div>
+            </div>
           </div>
           <div>
-            <ViewAllBtn />
+            <Link className="t-view-all-btn">
+              <strong>View All</strong>
+            </Link>
           </div>
         </div>
       </div>
       <Scroller filteredData={filteredData} />
+
+      <div>
+        <Link className="t-view-all-btn-mobile">
+          <strong>View All</strong>
+        </Link>
+      </div>
     </div>
   );
 };
