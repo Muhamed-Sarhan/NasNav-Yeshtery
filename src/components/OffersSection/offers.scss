@@ -1,38 +1,98 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 .o-section {
-  max-width: 1213px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  font-family: "Montserrat", sans-serif;
+	max-width: 1213px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-family: 'Montserrat', sans-serif;
 }
 .o-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 57.53px;
-  margin-bottom: 23.68px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 57.53px;
+	margin-bottom: 23.68px;
 }
 .o-title {
-  h3 {
-    font-size: 28px;
-    text-align: left;
-    letter-spacing: 0px;
-    color: #542e90;
-    opacity: 1;
-    margin-bottom: 10px;
-  }
-  h5 {
-    font-size: 22px;
-    text-align: left;
-    letter-spacing: 0px;
-    color: #575756;
-    opacity: 1;
-    font-weight: 400;
-  }
+	h3 {
+		font-size: 28px;
+		text-align: left;
+		letter-spacing: 0px;
+		color: #542e90;
+		opacity: 1;
+		margin-bottom: 10px;
+	}
+	h5 {
+		font-size: 22px;
+		text-align: left;
+		letter-spacing: 0px;
+		color: #575756;
+		opacity: 1;
+		font-weight: 400;
+	}
+}
+
+@media screen and (min-width: 500px) and (max-width: 800px) {
+	.o-header {
+		margin-top: 32px;
+	}
+	.o-title {
+		max-width: 320px;
+		h3 {
+			font-size: 20px;
+			margin-bottom: 5px;
+		}
+		h5 {
+			font-size: 16px;
+		}
+	}
+}
+
+@media screen and (min-width: 320px) and (max-width: 500px) {
+	.f-btn-select {
+		min-width: 100px;
+		border-radius: 16px;
+	}
+	.o-header {
+		margin-top: 20.39px;
+	}
+	.f-select {
+		border-radius: 16px;
+		position: relative;
+		select {
+			max-width: 100px;
+			max-height: 32px;
+			padding: 10.3px 50.24px 10.3px 13.24px;
+			font-weight: 900;
+			text-align: left;
+			line-height: 10.8px;
+			font-size: 9px;
+			border: 0.3042903244495392px solid #d9d9d9;
+			border-radius: 16px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+	}
+	.f-drop-down {
+		display: none;
+	}
+	.f-drop-down-m {
+		display: block;
+	}
+	.o-title {
+		min-width: 100px;
+		h3 {
+			font-size: 14px;
+			margin-bottom: 3px;
+		}
+		h5 {
+			font-size: 10px;
+		}
+	}
 }
