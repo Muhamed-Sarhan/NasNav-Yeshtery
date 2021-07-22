@@ -15,11 +15,10 @@ class Home extends Component {
 		products,
 		category,
 		offers,
-		isActive: false,
 	};
 
 	render() {
-		const { products, category, offers, isActive } = this.state;
+		const { products, category, offers } = this.state;
 
 		return (
 			<div className='Home'>
